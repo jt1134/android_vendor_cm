@@ -142,7 +142,6 @@ PRODUCT_PACKAGES += \
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    VideoEditor \
     VoiceDialer \
     SoundRecorder \
     Basic
@@ -173,7 +172,9 @@ PRODUCT_PACKAGES += \
     nano \
     htop \
     powertop \
-    lsof
+    lsof \
+    unrar \
+    zip
 
 # Openssh
 PRODUCT_PACKAGES += \
