@@ -174,7 +174,12 @@ PRODUCT_PACKAGES += \
     powertop \
     lsof \
     unrar \
-    zip
+    zip \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g
 
 # Openssh
 PRODUCT_PACKAGES += \
