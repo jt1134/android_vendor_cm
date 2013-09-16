@@ -46,8 +46,7 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
+PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
 endif
 
 ifdef CM_NIGHTLY
@@ -111,10 +110,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
-
-# block stock OTAs
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/otablock:system/bin/otablock
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
