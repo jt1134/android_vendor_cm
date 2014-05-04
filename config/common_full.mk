@@ -14,6 +14,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
+    PhotoTable \
     SoundRecorder
 
 # Extra tools in CM
